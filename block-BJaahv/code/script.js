@@ -24,25 +24,25 @@ function createObj(name, id, noOfProjects) {
 
 let ayush = createObj("Ayush", 12, 5);
 
-// Pseudoclassical Way
+// Prototypal Pattern
 
 let objMethods = {
   getProjects: function () {
-    return obj.noOfProjects;
+    return this.noOfProjects;
   },
   changeName: function (newName) {
-    return (obj.name = newName);
+    return (this.name = newName);
   },
   incrementProject: function () {
-    return ++obj.noOfProjects;
+    return ++this.noOfProjects;
   },
   decrementProject: function () {
-    return --obj.noOfProjects;
+    return --this.noOfProjects;
   },
 };
 
 function createObj(name, id, noOfProjects) {
-  let obj = {};
+  let obj = Object.create(objMethods);
   obj.name = name;
   obj.id = id;
   obj.noOfProjects = noOfProjects;
@@ -50,7 +50,7 @@ function createObj(name, id, noOfProjects) {
   return obj;
 }
 
-// Prototypal Pattern
+// Pseudoclassical Way
 
 function CreateObj(name, id, noOfProjects) {
   this.name = name;
