@@ -96,8 +96,6 @@ class Square {
       if(ar ===(this.width*this.height)){
           this.width = Math.sqrt(ar);
           this.height = Math.sqrt(ar);
-      }else{
-          return 'Not a valid input';
       }
   }
 }
