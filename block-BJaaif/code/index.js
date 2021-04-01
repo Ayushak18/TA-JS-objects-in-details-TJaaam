@@ -89,18 +89,22 @@ function PersonConstructor() {
 var simon = new PersonConstructor();
 simon.greet(); // -> Logs 'hello'
 
-/*** CHALLENGE 2 of 3 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+/*** CHALLENGE 2 of 3 ***/
 
 function personFromConstructor(name, age) {
   // add code here
+  let obj = new PersonConstructor();
+  obj.name = name;
+  obj.age = age;
+  return obj;
 }
 
 var mike = personFromConstructor("Mike", 30);
 
 // /********* Uncomment these lines to test your work! *********/
-// console.log(mike.name); // -> Logs 'Mike'
-// console.log(mike.age); //-> Logs 30
-// mike.greet(); //-> Logs 'hello'
+console.log(mike.name); // -> Logs 'Mike'
+console.log(mike.age); //-> Logs 30
+mike.greet(); //-> Logs 'hello'
 
 /*** CHALLENGE 3 of 3 ***/
 // add code here
