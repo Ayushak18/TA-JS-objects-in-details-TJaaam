@@ -7,8 +7,8 @@
 
 Array.prototype.myMap = function (element) {
   let arr = [];
-  for(let i of element){
-    arr.push(i);
+  for(let y of element){
+    arr.push(y);
   }
   return arr;
 };
