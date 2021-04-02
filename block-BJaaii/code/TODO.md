@@ -29,12 +29,38 @@ Getter
 
 ```js
 class Stack {
-  constructor(stack) {
-    this.stack = stack;
+  constructor() {
+    this.stack = [];
   }
 
   push(value) {
-      
+    this.stack.push(value);
+    return this.stack;
+  }
+
+  pop() {
+    this.stack.pop();
+    return this.stack;
+  }
+
+  peek(index = this.stack.length - 1) {
+    return this.stack[index];
+  }
+
+  reverse() {
+    return this.stack.reverse();
+  }
+
+  isEmpty() {
+    return this.stack.length == 0;
+  }
+
+  displayStack() {
+    return this.stack.join(" ");
+  }
+
+  get length() {
+    return this.stack.length;
   }
 }
 ```
@@ -75,6 +101,35 @@ Methods:
 Getter
 
 - `length`: returns the current length of the stack.
+
+```js
+class Queue {
+  constructor() {
+    this.queue = [];
+  }
+
+  enqueue(element) {
+    this.queue.push(element);
+    return this.queue;
+  }
+  dequeue() {
+    this.queue.shift();
+  }
+  peek(index = 0) {
+    return this.queue[index];
+  }
+  isEmpty() {
+    return this.queue.length == 0;
+  }
+  displayQueue() {
+    return this.queue.join(" ");
+  }
+
+  get length() {
+    return this.queue.length;
+  }
+}
+```
 
 #### Test
 
