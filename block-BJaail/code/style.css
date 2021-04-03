@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.margin {
+  margin-top: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header span,
+header i {
+  color: #00c3ff;
+}
+
+.heading {
+  font-size: 62px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0 20px 0;
+  border: #a7a7a7 1px solid;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  background: #00c3ff;
+  border: none;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.book-show h2 {
+  font-weight: 500;
+}
+
+.book-show p {
+  padding: 10px 0;
+  background: #d1d1d1;
+}
+
+table {
+  width: 100%;
+}
+
+table thead td {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 10px;
+}
+
+table tbody tr:nth-child(2n) {
+  background: #e6e6e6;
+}
+
+table tbody td {
+  padding: 20px 10px;
+}
+
+table tbody td i {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
