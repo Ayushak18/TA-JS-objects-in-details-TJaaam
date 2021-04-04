@@ -222,8 +222,12 @@ table {
     & td {
       padding: 20px 10px;
 
-      & i {
+      & .fa-window-close {
           color: red;
+      }
+
+      & .fa-check-square{
+          color: green;
       }
     }
   }

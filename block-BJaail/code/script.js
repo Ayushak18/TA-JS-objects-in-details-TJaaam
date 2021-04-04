@@ -1,14 +1,14 @@
-let allInput = document.querySelectorAll("input");
-let button = document.querySelector("button");
-button.addEventListener("click", function () {
-  let book = document.createElement("tr");
-  allInput.forEach((element) => {
-    let field = document.createElement("td");
-    field.innerText = element.value;
-    book.append(field);
-    console.log(book);
-  });
-});
+// let allInput = document.querySelectorAll("input");
+// let button = document.querySelector("button");
+// button.addEventListener("click", function () {
+//   let book = document.createElement("tr");
+//   allInput.forEach((element) => {
+//     let field = document.createElement("td");
+//     field.innerText = element.value;
+//     book.append(field);
+//     console.log(book);
+//   });
+// });
 
 // let book = document.createElement("tr");
 //   let field = document.createElement("td");
@@ -20,3 +20,22 @@ button.addEventListener("click", function () {
 
 //   book.append(field);
 //   console.log(book);
+
+let form = document.querySelector("form");
+
+let titleElement = form.elements.title;
+let authorElement = form.elements.author;
+let isbnElement = form.elements.ISBN;
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let titleValue = titleElement.value;
+  let authorValue = authorElement.value;
+  let isbnValue = isbnElement.value;
+  console.log(titleValue, authorValue, isbnValue);
+  titleElement.value = "";
+  authorElement.value = "";
+  isbnElement.value = "";
+}
+
+form.addEventListener("submit", handleSubmit);

@@ -228,7 +228,11 @@ table tbody td {
   padding: 20px 10px;
 }
 
-table tbody td i {
+table tbody td .fa-window-close {
   color: red;
+}
+
+table tbody td .fa-check-square {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
