@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookly</title>
+    <script
+      src="https://kit.fontawesome.com/bd80cb216a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container flex align-center justify-center margin">
+        <i class="fas fa-book-open fa-4x"></i>
+        <h1 class="heading">My<span>Book</span>List</h1>
+      </div>
+    </header>
+    <main>
+      <!-- Book Add Form -->
+      <section class="book-add">
+        <form action="">
+          <div class="container">
+            <label for=""
+              >Title
+              <input type="text" name="title" />
+            </label>
+            <label for=""
+              >Author
+              <input type="text" name="author" />
+            </label>
+            <label for=""
+              >ISBN
+              <input type="number" name="ISBN" />
+            </label>
+            <button type="submit">Add Book</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Book Show Section -->
+      <section class="book-show">
+        <div class="container">
+          <hr />
+          <table>
+            <thead>
+              <td>Title</td>
+              <td>Author</td>
+              <td>ISBN</td>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
